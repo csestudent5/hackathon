@@ -1,0 +1,69 @@
+ <!-- <!DOCTYPE html> -->
+ <html>
+<head>
+<title>REGISTRATION FORM</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function validation1()
+{
+alert("entered");
+var a=f.t1.value;
+alert(a);
+var user=/[a-z]+[0-9]*/i;
+//alert(user);
+if(a.match(user)&&a.length>6)
+{
+  alert("valid");
+  var b=f.t2.value;
+	alert(b);
+	if(b.length<6)
+	{
+	alert("password is invalid");
+	}
+	else
+	{
+	alert("valid");
+	var c=f.t3.value;
+	var email=/[a-z]+([0-9]*)+@+[a-z]+(\.\w{2,3})+$/i;
+	if(c.match(email))
+	{
+		alert("valid");
+		var d=f.t4.value;
+		var ph=/[6789]+[0-9]/;
+		if(d.match(ph)&&d.length==10)
+		{
+			alert("valid");
+		}
+		else
+		{
+			alert("phone number  is invalid");
+		}
+	}
+	else
+	{
+		alert(" email is invalid");
+	}
+}
+}
+else
+{
+alert("username is invalid");
+}
+}
+</script>
+</head>
+<body id="bod">
+
+	<div class="wrap">
+		<h2>Sign up Here</h2>
+		<form name="f">
+			<input type="text" name="t1" placeholder="User Name.." required>
+			<input type="password" name="t2" placeholder="Password.." required>
+			<input type="text" name="t3" placeholder="Email.." required>
+			<input type="text" name="t4" placeholder="Mobile No.." required>
+			<input type="text" placeholder="Gender.." required>
+			<input type="submit" value="submit" onclick="validation1()">
+		</form>
+</div>
+</body>
+</html>
