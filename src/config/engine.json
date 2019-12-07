@@ -1,0 +1,26 @@
+{
+  "engineName": "hack",
+  "hostIdentifier": "host-9txn1c",
+  "endpointBase": "https://host-9txn1c.api.swiftype.com",
+  "searchKey": "search-qk1sqskpxrb5aungdptsafcn",
+  "resultFields": [
+    "title",
+    "description",
+    "nps_link",
+    "states",
+    "visitors",
+    "world_heritage_site",
+    "location",
+    "acres",
+    "square_km",
+    "date_established",
+    "id"
+  ],
+  "sortFields": [
+
+  ],
+  "facets": [
+
+  ],
+  "titleField": "states"
+}
