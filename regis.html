@@ -1,0 +1,77 @@
+ <html>
+<head>
+<title>REGISTRATION FORM</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function valid()
+{
+alert("entered");
+var a=f.t1.value;
+alert(a);
+var user=/[a-z]+[0-9]*/i;
+//alert(user);
+if(a.match(user)&&a.length>6)
+{
+alert("valid");
+var b=f.t2.value;
+alert(b);
+if(b.length<6)
+{
+alert("password is invalid");
+}
+else
+{
+alert("valid");
+var c=f.t3.value;
+var email=/[a-z]+([0-9]*)+@+[a-z]+(\.\w{2,3})+$/i;
+if(c.match(email))
+{
+alert("valid");
+var d=f.t4.value;
+var ph=/[6789]+[0-9]/;
+if(d.match(ph)&&d.length==10)
+{
+alert("valid");
+}
+else
+{
+alert("phone number  is invalid");
+}
+}
+else
+{
+alert(" email is invalid");
+}
+}
+}
+else
+{
+alert("username is invalid");
+}
+}
+</script>
+<!-- <style>
+body
+{
+background-image:url(back.jpg);
+background-size:cover;
+color:blue;
+padding-right:100px;
+padding-top:100px;
+}
+</style> -->
+</head>
+<body>
+	<div class="wrap">
+		<h2>Sign up Here</h2>
+		<form>
+			<input type="text" placeholder="User Name.." required>
+			<input type="text" placeholder="Password.." required>
+			<input type="text" placeholder="Email.." required>
+			<input type="text" placeholder="Mobile No.." required>
+			<input type="text" placeholder="Gender.." required>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="table.xslt"?>
+<!DOCTYPE catalogue [
+<!ELEMENT catalogue (book)> 
+<!ELEMENT book (ROOMTYPE,OPTIONS,NIGHTLYPRICE,BOOKNOW)>
+<!ELEMENT ROOMTYPE (#PCDATA)>
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ELEMENT NIGHTLYPRICE (#PCDATA)>
+<!ELEMENT BOOKNOW (#PCDATA)>
+]>
+<catalogue>
+ <book>
+	<ROOMTYPE>
+		<!-- <img src="s1.jpg" width="50px" height="50px"> -->
+		<h3>Suite</h3>
+Room with view
+538 square feet
+1 King Bed
+Room sleeps 3 guests
+(up to 1 child)
+More details</ROOMTYPE>
+	<OPTIONS> Free Internet
+  Free parking</OPTIONS>
+	<NIGHTLYPRICE>3500/-</NIGHTLYPRICE>
+	<BOOKNOW>BOOK NOW</BOOKNOW>
+ </book>
+<book>
+	<ROOMTYPE>
+		<!-- <img src="s2.jpg" width="50px" height="50px"> -->
+		<h3>Suite</h3>
+Room with view
+538 square feet
+1 King Bed
+Room sleeps 3 guests
+(up to 1 child)
+More details</ROOMTYPE>
+	<OPTIONS> Free Internet
+  Free parking</OPTIONS>
+	<NIGHTLYPRICE>4000/-</NIGHTLYPRICE>
+	<BOOKNOW>BOOK NOW</BOOKNOW>
+	
+</book>
+
+<book>
+	<ROOMTYPE>
+	<!-- <img src="s3.jpg" width="50px" height="50px"> -->
+		<h3>Room</h3>
+Room with view
+377 square feet
+1 King Bed
+Room sleeps 3 guests
+(up to 1 child)
+More details</ROOMTYPE>
+	<OPTIONS> Free Internet
+  Free parking</OPTIONS>
+	<NIGHTLYPRICE>4500/-</NIGHTLYPRICE>
+	<BOOKNOW>BOOK NOW</BOOKNOW>
+</book>
+
+<book>
+	<ROOMTYPE>
+	<!-- <img src="s4.jpg" width="50px" height="50px"> -->
+		<h3>luxury</h3>
+Room with view
+377 square feet
+1 King Bed
+Room sleeps 3 guests
+(up to 1 child)
+More details</ROOMTYPE>
+	<OPTIONS> Free Internet
+  Free parking</OPTIONS>
+	<NIGHTLYPRICE>8000/-</NIGHTLYPRICE>
+	<BOOKNOW>BOOK NOW</BOOKNOW>
+</book>
+</catalogue>
+
